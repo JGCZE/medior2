@@ -1,0 +1,19 @@
+.companyContainer {
+  @apply w-[100%]
+}
+
+.header {
+  @apply text-lg;
+}
+
+.userInfo {
+  @apply flex;
+}
+
+.desc {
+  @apply w-32 text-gray
+}
+
+.value {
+  @apply w-56
+}

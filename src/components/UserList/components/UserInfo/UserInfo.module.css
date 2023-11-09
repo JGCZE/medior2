@@ -1,0 +1,19 @@
+.userInfo {
+  @apply flex;
+}
+
+.userInfo:first-child {
+  @apply mb-5;
+}
+
+.link {
+  @apply text-blue-dark-1 text-base px-5 font-bold
+}
+
+.desc {
+  @apply w-32 text-gray
+}
+
+.value {
+  @apply w-56
+}

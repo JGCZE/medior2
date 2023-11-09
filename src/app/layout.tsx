@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import { Metadata } from 'next';
 import '@/styles/index.scss';
+import { GlobalContextProvider } from '@/globalContext/globalContext';
 
 interface IProps {
   children: ReactElement
@@ -18,7 +19,9 @@ const RootLayout = ({
 }: IProps): ReactElement => (
   <html lang="en">
     <body className="page-layout">
-      {children}
+    <GlobalContextProvider>
+        {children}
+      </GlobalContextProvider>
     </body>
   </html>
 );

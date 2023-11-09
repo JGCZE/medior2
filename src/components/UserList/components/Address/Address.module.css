@@ -1,0 +1,23 @@
+.address {
+  @apply flex flex-row justify-between;
+}
+
+.addressHeading {
+  @apply text-lg
+}
+
+.userInfo {
+  @apply flex;
+}
+
+.link {
+  @apply text-blue-dark-1 text-base px-5 font-bold
+}
+
+.desc {
+  @apply w-32 text-gray
+}
+
+.value {
+  @apply w-56
+}

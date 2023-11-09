@@ -1,0 +1,27 @@
+.articlesHeading {
+  @apply text-xxl mx-10 mt-10
+}
+
+.articleUserName {
+  @apply text-base mx-10 mt-4 mb-8 flex w-[200px] justify-between
+}
+
+.articleUserName p {
+  @apply text-gray font-semibold
+}
+
+.article {
+  @apply border border-blue-light rounded-xl w-[30%] border-t-0 p-5
+}
+
+.mainTitle {
+  @apply mb-3 text-xl capitalize;
+}
+
+.text {
+  @apply text-gray capitalize text-sm
+}
+
+.mainArticle {
+  @apply flex flex-wrap gap-5 justify-center
+}

@@ -1,0 +1,37 @@
+.oneUser {
+    @apply flex flex-col justify-between w-96 border border-blue-light border-t-0 min-h-[500px] my-4 mx-auto rounded-xl py-4;
+ }
+ 
+ .oneUser:hover {
+   @apply shadow-lg
+ }
+ 
+ .users {
+   @apply flex flex-wrap gap-4;
+ }
+ 
+ .user {
+   @apply flex flex-wrap gap-6 mx-3;
+ }
+ 
+ .container {
+   @apply text-sm
+ }
+ 
+ .headingTitle {
+   @apply text-xxl font-bold
+ }
+ 
+ .mainTitle {
+   @apply my-3 mx-3 text-xxl;
+ }
+ 
+ .buttonContainer {
+   @apply flex flex-col items-center;
+ }
+ 
+ .button {
+   @apply text-lg w-[90%] h-11 mt-7 border border-blue-dark-1 text-blue-dark-1 rounded-lg px-5 font-bold cursor-pointer;
+ }
+ 
+ 
