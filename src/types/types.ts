@@ -1,3 +1,7 @@
+/*
+  Proč jsou některé typy zde a jiné v souborech s komponentami?
+  Vlastnosti objektů skládej podle abecedy, líp se to bude v budoucnu hledat.
+*/
 export type OneUserProps = {
   id: number;
   name: string;

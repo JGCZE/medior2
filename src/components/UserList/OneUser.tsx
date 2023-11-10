@@ -7,6 +7,24 @@ import Company from './components/Company/Company';
 import UserInfo from './components/UserInfo/UserInfo';
 import styles from './OneUser.module.css';
 
+/*
+  Nesedí barvy
+  Tento soubor, CSS a složka components by měly být ve složce components
+  - UserList
+    * UserList.tsx
+    - components
+      - OneUser
+        * OneUser.tsx
+        * OneUser.module.css
+        - components
+          ...
+
+  Pokud budeš psát názvy interface s I (IProps), tak hned na první pohled uvidíš,
+  že je to interface.
+  Obdobně pro typy TProps.
+
+  Pro popis parametrů funkcí by se spíše měly používat interface.
+*/
 type Props = {
   oneUser: {
     id: number;
@@ -30,12 +48,16 @@ type Props = {
   name: string
 };
 
+/*
+: ReactElement
+*/
 const OneUser = ({ oneUser }: Props):ReactElement => {
   const { setId, setUserName } = useGlobalContext();
   const router = useRouter();
 
   const { id, name,  address, company } = oneUser;
 
+  // tahle fce se bude vytvářet po každém přerenderování znovu, použij useCallback
   const handleReadArticlesClick = ():void => {
     setId(id); // Nastavíme ID v kontextu pro další použití, pokud je potřeba
     setUserName(name);
@@ -49,7 +71,13 @@ const OneUser = ({ oneUser }: Props):ReactElement => {
         <h2 className={styles.mainTitle}>{oneUser.name}</h2>
 
         <div className={styles.user}>
-          <UserInfo oneUser={oneUser}/>
+            {/*
+              One user objekt typově nesedí s tím, co očekává parametr onde user v UsertInfo
+            */}
+          <UserInfo oneUser={oneUser} />
+            {/*
+              Proč lat a lng je 0, když to je v objektu uživatele?
+            */}
           <Address address={{ ...address, geo: { lat: 0, lng: 0 } }} />
           <Company company={company} />
         </div>
@@ -61,6 +89,9 @@ const OneUser = ({ oneUser }: Props):ReactElement => {
       </div>
     </div>
     </>
+    /*
+      Následující řádek je tu zbytečný
+    */
 
   );
 };

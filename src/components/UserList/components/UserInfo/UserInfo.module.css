@@ -1,5 +1,9 @@
 .userInfo {
   @apply flex;
+
+  /*
+    @apply first:mb-5;
+  */
 }
 
 .userInfo:first-child {

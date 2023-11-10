@@ -1,5 +1,12 @@
+/*
+  Mezery v prázdných řádcích, na konci dva prázdné řádky místo jednoho
+*/
 .oneUser {
     @apply flex flex-col justify-between w-96 border border-blue-light border-t-0 min-h-[500px] my-4 mx-auto rounded-xl py-4;
+
+    /*
+      @apply hover:shadow-lg;
+    */
  }
  
  .oneUser:hover {

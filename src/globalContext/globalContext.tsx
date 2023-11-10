@@ -12,6 +12,10 @@ type GlobalProviderProps = {
   children: ReactNode;
 };
 
+/*
+  Pro lepší čitelnost to skládej podle abecedy a funkce až na konec.
+  Prázdnými řádky odděluj funkční kusy kódů.
+*/
 const defaultGlobalContextValue: GlobalContextType = {
   userId: null,
   setId: () => {},
@@ -37,6 +41,9 @@ export const useGlobalContext = (): GlobalContextType => {
   if (!context) {
     throw new Error('useGlobalContext must be used within a GlobalProvider');
   }
+  /*
+    Třeba tady bych dal před return context; prázdný řádek
+  */
   return context;
 };
 

@@ -19,6 +19,9 @@ const RootLayout = ({
 }: IProps): ReactElement => (
   <html lang="en">
     <body className="page-layout">
+    { /*
+      nedodržení odsazení
+    */ }
     <GlobalContextProvider>
         {children}
       </GlobalContextProvider>
