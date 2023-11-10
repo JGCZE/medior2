@@ -6,6 +6,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2023-10-16
 ### Authors
-Jan Gross
+Jan Gross **REVIEW: první verze, takže 1.0.0 0.1.0 měla zůstat na mě**
 ### Added
 - Initial release

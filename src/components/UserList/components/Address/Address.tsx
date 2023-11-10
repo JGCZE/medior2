@@ -24,6 +24,10 @@ const Address = ({ address }:IPropAddress):ReactElement => {
     <div>
       <div className={styles.address}>
         <h3 className={styles.addressHeading}>Address</h3>
+        { /*
+          Tato komponenta se primárně používá pro vytvoření interního
+          odkazu, pro externí odkazy by jsi měl použíz značku <a />
+        */}
         <Link
           className={styles.link}
           target="_blank"

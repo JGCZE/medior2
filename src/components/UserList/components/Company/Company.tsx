@@ -9,6 +9,12 @@ interface IPropCompany {
   }
 }
 
+/*
+  Tohle zvýší čitelnost kódu
+  const Company = ({ company }: IPropCompany): ReactElement => {
+
+  Odděluj funkční bloky prázdným řádkem
+*/
 const Company = ({ company }:IPropCompany):ReactElement => {
   const { name, catchPhrase, bs } = company;
   return (
